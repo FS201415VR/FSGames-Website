@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="js/theme.js"></script>
+<head>
+    <meta charset="utf-8">
+    <title>Contact · FS Games</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="top">
+        <div class="wrap">
+            <nav class="nav" aria-label="Main">
+                <div class="icons">
+                    <a class="ic" href="https://discord.gg/qJ2HAyYXCN" target="_blank" rel="noopener" aria-label="Discord"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" fill-rule="evenodd" aria-hidden="true"><path d="M5 6.5c2-1.3 4-1.9 4-1.9l.5 1.1c1.6-.3 3.4-.3 5 0l.5-1.1s2 .6 4 1.9c2 3 2.7 6.2 2.5 9.6-1.7 1.3-3.4 2-4.9 2.4l-1-1.7c.6-.2 1.1-.5 1.6-.8-.3-.2-.6-.4-.8-.6-3 1.4-6.8 1.4-9.8 0-.2.2-.5.4-.8.6.5.3 1 .6 1.6.8l-1 1.7c-1.5-.4-3.2-1.1-4.9-2.4-.2-3.4.5-6.6 2.5-9.6zM9 11.2a1.5 1.7 0 1 0 .01 0zM15 11.2a1.5 1.7 0 1 0 .01 0z" /></svg></a>
+                    <a class="ic" href="https://www.youtube.com/@FSGamesDevJourney" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" fill-rule="evenodd" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5 3-5 3z" /></svg></a>
+                    <a class="ic" href="https://fs20vr.itch.io" target="_blank" rel="noopener" aria-label="itch.io">itch</a>
+                    <a class="ic" href="https://github.com/FS201415VR" target="_blank" rel="noopener" aria-label="GitHub">&lt;/&gt;</a>
+                </div>
+                <a class="nb" href="index.html">Home</a>
+                <a class="nb" href="games.html">Games</a>
+
+                <button class="nb" type="button" id="openSettings">Settings</button>
+            </nav>
+        </div>
+    </header>
+
+    <dialog id="settings" class="settings-dlg" aria-labelledby="sTitle">
+        <div class="bar"><h3 id="sTitle">Settings</h3><button type="button" id="closeSettings">Close</button></div>
+        <div class="sbody">
+            <h4>Background color</h4>
+            <div class="swatches" role="group" aria-label="Background color">
+                <button type="button" data-theme-set="dark" aria-pressed="false"><i style="background:#181818"></i>Dark</button>
+                <button type="button" data-theme-set="black" aria-pressed="false"><i style="background:#000000"></i>Pure black</button>
+                <button type="button" data-theme-set="purple" aria-pressed="false"><i style="background:#15131f"></i>Purple</button>
+            </div>
+        </div>
+    </dialog>
+    </nav>
+
+    <main>
+        <div class="wrap">
+            <h2 class="t">Contact</h2>
+            <p class="sub">Questions, feedback or game ideas? We’d love to hear them.</p>
+            <div class="cbox">
+                <a href="https://discord.gg/qJ2HAyYXCN" target="_blank" rel="noopener">Discord<small>Chat with us and other players</small></a>
+                <a href="https://www.youtube.com/@FSGamesDevJourney" target="_blank" rel="noopener">YouTube<small>Watch our dev journey</small></a>
+                <a href="https://fs20vr.itch.io" target="_blank" rel="noopener">itch.io<small>Follow us for new releases</small></a>
+                <a href="https://github.com/FS201415VR" target="_blank" rel="noopener">GitHub<small>Browse our code</small></a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <small>© <span id="yr">2026</span> FS Games. We make games.</small>
+        </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
