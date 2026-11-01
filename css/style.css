@@ -649,3 +649,351 @@ dialog {
 [hidden] {
     display: none !important
 }
+
+/* add to played games */
+.cardwrap {
+    position: relative;
+    display: flex
+}
+
+    .cardwrap .game {
+        flex: 1;
+        min-width: 0
+    }
+
+.addp {
+    all: unset;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background: var(--ink);
+    color: var(--bg);
+    font-weight: 600;
+    font-size: .8rem;
+    opacity: 0;
+    transition: opacity .15s
+}
+
+    .cardwrap:hover .addp, .cardwrap:focus-within .addp, .addp[aria-pressed="true"] {
+        opacity: 1
+    }
+
+    .addp:focus-visible {
+        outline: 3px solid var(--ink);
+        outline-offset: 2px
+    }
+
+@media (hover:none) {
+    .addp {
+        opacity: 1
+    }
+}
+
+.plist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 8px;
+    max-height: 60vh;
+    overflow: auto
+}
+
+    .plist li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 10px 12px;
+        border: 1px solid var(--line);
+        border-radius: 4px
+    }
+
+    .plist a {
+        font-weight: 600;
+        text-decoration: none
+    }
+
+        .plist a:hover {
+            text-decoration: underline
+        }
+
+    .plist button {
+        all: unset;
+        cursor: pointer;
+        font-size: .85rem;
+        color: var(--muted);
+        padding: 4px 8px;
+        border-radius: 4px
+    }
+
+        .plist button:hover {
+            background: var(--line);
+            color: var(--ink)
+        }
+
+    .plist .none {
+        color: var(--muted);
+        border: 0;
+        padding: 0
+    }
+
+/* posts */
+.postlist {
+    display: grid;
+    gap: 18px;
+    padding: 10px 0 60px;
+    max-width: 720px
+}
+
+.post {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    overflow: hidden
+}
+
+    .post img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover
+    }
+
+.pbody {
+    padding: 16px 18px 18px
+}
+
+    .pbody h3 {
+        margin: 0 0 4px;
+        font-size: 1.3rem;
+        letter-spacing: -.02em
+    }
+
+.pmeta {
+    margin: 0 0 12px;
+    color: var(--muted);
+    font-size: .9rem
+}
+
+.ptext {
+    margin: 0;
+    white-space: pre-line
+}
+
+/* posts + like button */
+.postlist {
+    display: grid;
+    gap: 18px;
+    padding: 10px 0 60px;
+    max-width: 720px
+}
+
+.post {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    overflow: hidden
+}
+
+    .post img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover
+    }
+
+.pbody {
+    padding: 16px 18px 18px
+}
+
+    .pbody h3 {
+        margin: 0 0 4px;
+        font-size: 1.3rem;
+        letter-spacing: -.02em
+    }
+
+.pmeta {
+    margin: 0 0 12px;
+    color: var(--muted);
+    font-size: .9rem
+}
+
+.ptext {
+    margin: 0 0 16px;
+    white-space: pre-line
+}
+
+.like {
+    all: unset;
+    cursor: pointer;
+    padding: 7px 14px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: .9rem
+}
+
+    .like:hover {
+        border-color: var(--ink)
+    }
+
+    .like[aria-pressed="true"] {
+        background: var(--ink);
+        color: var(--bg);
+        border-color: var(--ink)
+    }
+
+    .like:focus-visible {
+        outline: 3px solid var(--ink);
+        outline-offset: 2px
+    }
+
+/* add to played games button on cards */
+.cardwrap {
+    position: relative;
+    display: flex
+}
+
+    .cardwrap .game {
+        flex: 1;
+        min-width: 0
+    }
+
+.addp {
+    all: unset;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background: var(--ink);
+    color: var(--bg);
+    font-weight: 600;
+    font-size: .8rem;
+    opacity: 0;
+    transition: opacity .15s
+}
+
+    .cardwrap:hover .addp, .cardwrap:focus-within .addp, .addp[aria-pressed="true"] {
+        opacity: 1
+    }
+
+    .addp:focus-visible {
+        outline: 3px solid var(--ink);
+        outline-offset: 2px
+    }
+
+@media (hover:none) {
+    .addp {
+        opacity: 1
+    }
+}
+
+/* Saved window */
+.plist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 8px;
+    max-height: 50vh;
+    overflow: auto
+}
+
+    .plist li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 10px 12px;
+        border: 1px solid var(--line);
+        border-radius: 4px
+    }
+
+    .plist a {
+        font-weight: 600;
+        text-decoration: none
+    }
+
+        .plist a:hover {
+            text-decoration: underline
+        }
+
+    .plist button {
+        all: unset;
+        cursor: pointer;
+        font-size: .85rem;
+        color: var(--muted);
+        padding: 4px 8px;
+        border-radius: 4px
+    }
+
+        .plist button:hover {
+            background: var(--line);
+            color: var(--ink)
+        }
+
+    .plist .none {
+        color: var(--muted);
+        border: 0;
+        padding: 0
+    }
+
+.sv {
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 6px
+}
+
+    .sv summary {
+        cursor: pointer;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        padding: 12px 0;
+        font-weight: 800;
+        font-size: 1.05rem
+    }
+
+        .sv summary::-webkit-details-marker {
+            display: none
+        }
+
+        .sv summary::after {
+            content: "";
+            margin-left: auto;
+            width: 8px;
+            height: 8px;
+            border-right: 2px solid var(--ink);
+            border-bottom: 2px solid var(--ink);
+            transform: rotate(45deg);
+            transition: transform .2s
+        }
+
+    .sv[open] summary::after {
+        transform: rotate(-135deg)
+    }
+
+    .sv summary span {
+        font-weight: 400;
+        color: var(--muted);
+        margin-left: 8px;
+        font-size: .9rem
+    }
+
+    .sv summary:focus-visible {
+        outline: 3px solid var(--ink);
+        outline-offset: 2px
+    }
+
+    .sv .plist {
+        padding: 0 0 14px
+    }
